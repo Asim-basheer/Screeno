@@ -84,36 +84,6 @@ h5 {
           animation: arrowAnimation 0.5s ease infinite;
 }
 
-@-webkit-keyframes arrowAnimation {
-  0% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  50% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-}
-
-@keyframes arrowAnimation {
-  0% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  50% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-}
-
 .img-caro {
   border-radius: 20px !important;
 }
@@ -151,9 +121,71 @@ footer {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
+  -webkit-animation: scrollToTop 0.6s 0.3s ease infinite;
+          animation: scrollToTop 0.6s 0.3s ease infinite;
 }
 
 .scroll-top > img {
   max-width: 100%;
+}
+
+@-webkit-keyframes arrowAnimation {
+  0% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@keyframes arrowAnimation {
+  0% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@-webkit-keyframes scrollToTop {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  50% {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+@keyframes scrollToTop {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  50% {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
 }
 /*# sourceMappingURL=main.css.map */

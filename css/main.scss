@@ -20,11 +20,51 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+h2,
+h3 {
+  font-weight: 600;
+}
+h2 {
+  font-size: 2rem;
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+  }
+}
 h3 {
   font-size: 1.125rem;
-  font-weight: 600;
 }
 
 .main-title {
   font-size: 3rem;
+  @media (max-width: 767px) {
+    & {
+      font-size: 2rem;
+    }
+  }
+}
+
+.arrow {
+  transition: 0.3s;
+}
+.arrow img {
+  transition: 0.3s;
+}
+.arrow:hover img {
+  animation: arrowAnimation 0.5s ease infinite;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+.img-caro {
+  border-radius: 20px !important;
 }

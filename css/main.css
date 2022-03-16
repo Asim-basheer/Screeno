@@ -20,12 +20,81 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 h3 {
   font-size: 1.125rem;
-  font-weight: 600;
 }
 
 .main-title {
   font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 2rem;
+  }
+}
+
+.arrow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.arrow img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.arrow:hover img {
+  -webkit-animation: arrowAnimation 0.5s ease infinite;
+          animation: arrowAnimation 0.5s ease infinite;
+}
+
+@-webkit-keyframes arrowAnimation {
+  0% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@keyframes arrowAnimation {
+  0% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+.img-caro {
+  border-radius: 20px !important;
 }
 /*# sourceMappingURL=main.css.map */

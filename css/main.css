@@ -10,6 +10,22 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+header {
+  background-color: #141516;
+}
+
+.navbar {
+  background-color: #141516;
+}
+
+.help-section {
+  background-color: #141516;
+}
+
+.business {
+  background-color: #141516;
+}
+
 h1,
 h2,
 h3,
@@ -37,6 +53,10 @@ h2 {
 
 h3 {
   font-size: 1.125rem;
+}
+
+h5 {
+  font-weight: 600 !important;
 }
 
 .main-title {
@@ -96,5 +116,44 @@ h3 {
 
 .img-caro {
   border-radius: 20px !important;
+}
+
+.form-rounded {
+  border-radius: 16px !important;
+}
+
+.form-padding {
+  padding: 12px 15px !important;
+}
+
+footer {
+  background-color: #f7f9fa;
+}
+
+.scroll-top {
+  position: fixed;
+  z-index: 1000;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.scroll-top:hover {
+  opacity: 0.8;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-top > img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

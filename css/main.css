@@ -19,4 +19,13 @@ h6 {
   font-family: "Orelega One", cursive;
   font-family: "Montserrat", sans-serif;
 }
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.main-title {
+  font-size: 3rem;
+}
 /*# sourceMappingURL=main.css.map */

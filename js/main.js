@@ -19,6 +19,17 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
+ScrollReveal({ reset: true, distance: "30px", duration: 2500, delay: 200 });
+
+ScrollReveal().reveal(".main-title", { delay: 200, origin: "left" });
+ScrollReveal().reveal(".animation-top", { delay: 400, origin: "top" });
+ScrollReveal().reveal(".animation-bottom", { delay: 400, origin: "bottom" });
+ScrollReveal().reveal(".animation-left", { delay: 400, origin: "left" });
+ScrollReveal().reveal(".animation-right", {
+  delay: 400,
+  origin: "right",
+});
+
 // scroll top code
 
 const scrollTop = document.querySelector(".scroll-top");

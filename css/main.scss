@@ -1,30 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Orelega+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish&family=Orelega+One&display=swap");
+
 * {
   //   padding: 0;
   //   margin: 0;
   box-sizing: border-box;
 }
 
-$dark-background: #141516;
 body {
   font-family: "Orelega One", cursive;
   font-family: "Mulish", sans-serif;
 }
 
-header {
-  background-color: $dark-background;
-}
-.navbar {
-  background-color: $dark-background;
-}
-
-.help-section {
-  background-color: $dark-background;
-}
-.business {
-  background-color: $dark-background;
-}
 h1,
 h2,
 h3,
@@ -35,22 +22,14 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-h2,
-h3 {
-  font-weight: 600;
+h2 {
+  font-weight: 600 !important;
 }
 h2 {
   font-size: 2rem;
   @media (max-width: 767px) {
     font-size: 1.5rem;
   }
-}
-h3 {
-  font-size: 1.125rem;
-}
-
-h5 {
-  font-weight: 600 !important;
 }
 
 .main-title {
@@ -62,18 +41,33 @@ h5 {
   }
 }
 
+header,
+.navbar,
+.help-section,
+.business {
+  background-color: #141516;
+}
+
+footer {
+  background-color: #f7f9fa;
+}
+
 .arrow {
   transition: 0.3s;
-}
-.arrow img {
-  transition: 0.3s;
-}
-.arrow:hover img {
-  animation: arrowAnimation 0.5s ease infinite;
+  &:hover img {
+    animation: arrowAnimation 0.5s ease infinite;
+  }
+  img {
+    transition: 0.3s;
+  }
 }
 
 .img-caro {
   border-radius: 20px !important;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .form-rounded {
@@ -82,9 +76,8 @@ h5 {
 .form-padding {
   padding: 12px 15px !important;
 }
-footer {
-  background-color: #f7f9fa;
-}
+
+// scroll top
 
 .scroll-top {
   position: fixed;
@@ -109,6 +102,8 @@ footer {
     max-width: 100%;
   }
 }
+
+// animation
 
 @keyframes arrowAnimation {
   0% {

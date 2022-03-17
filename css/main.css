@@ -10,22 +10,6 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-header {
-  background-color: #141516;
-}
-
-.navbar {
-  background-color: #141516;
-}
-
-.help-section {
-  background-color: #141516;
-}
-
-.business {
-  background-color: #141516;
-}
-
 h1,
 h2,
 h3,
@@ -36,9 +20,8 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-h2,
-h3 {
-  font-weight: 600;
+h2 {
+  font-weight: 600 !important;
 }
 
 h2 {
@@ -51,14 +34,6 @@ h2 {
   }
 }
 
-h3 {
-  font-size: 1.125rem;
-}
-
-h5 {
-  font-weight: 600 !important;
-}
-
 .main-title {
   font-size: 3rem;
 }
@@ -69,12 +44,18 @@ h5 {
   }
 }
 
-.arrow {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+header,
+.navbar,
+.help-section,
+.business {
+  background-color: #141516;
 }
 
-.arrow img {
+footer {
+  background-color: #f7f9fa;
+}
+
+.arrow {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -84,8 +65,18 @@ h5 {
           animation: arrowAnimation 0.5s ease infinite;
 }
 
+.arrow img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .img-caro {
   border-radius: 20px !important;
+}
+
+.img-caro img {
+  width: 100%;
+  height: auto;
 }
 
 .form-rounded {
@@ -94,10 +85,6 @@ h5 {
 
 .form-padding {
   padding: 12px 15px !important;
-}
-
-footer {
-  background-color: #f7f9fa;
 }
 
 .scroll-top {

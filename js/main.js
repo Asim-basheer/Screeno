@@ -19,7 +19,7 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-ScrollReveal({ reset: true, distance: "30px", duration: 2500, delay: 200 });
+ScrollReveal({ reset: false, distance: "30px", duration: 2500, delay: 200 });
 
 ScrollReveal().reveal(".main-title", { delay: 200, origin: "left" });
 ScrollReveal().reveal(".animation-top", { delay: 400, origin: "top" });
